@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fastapi-pro"
+version = "0.1.0"
+description = ""
+authors = ["lyh <1363998021@qq.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_pro"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
+aiohttp = "^3.8.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

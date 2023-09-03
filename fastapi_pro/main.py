@@ -1,0 +1,12 @@
+import uvicorn
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+
+
+app = FastAPI()
+
+app.mount("/static", StaticFiles())
+
+
+if __name__ == '__main__':
+    uvicorn.run("main:app", reload=True, workers=1)
